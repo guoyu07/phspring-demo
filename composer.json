@@ -1,0 +1,52 @@
+{
+    "name": "syyongx/phspring-demo",
+    "description": "The demo of phspring framework",
+    "keywords": [
+        "PhSpring-demo"
+    ],
+    "homepage": "https://github.com/syyongx/PhSpring",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "syyong.x",
+            "email": "syyong.x@gmail.com",
+            "homepage": "https://github.com/syyongx/PhSpring",
+            "role": "Founder and project lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/syyongx/PhSpring/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "https://github.com/syyongx/PhSpring/wiki/",
+        "source": "https://github.com/syyongx/PhSpring"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "replace": {
+        "syyongx/PhSpring": "self.version"
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-mbstring": "*",
+        "ext-ctype": "*",
+        "lib-pcre": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "config": {
+        "platform": {"php": "5.4"}
+    },
+    "bin": [
+        "framework/yii"
+    ],
+    "extra": {
+
+    }
+}
