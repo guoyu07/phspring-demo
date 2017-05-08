@@ -22,14 +22,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "replace": {
-        "syyongx/PhSpring": "self.version"
-    },
     "require": {
-        "php": ">=7.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.4"
+        "php": ">=7.0",
+        "syyongx/PhSpring": "dev-master"
     },
     "repositories": {
         "packagist": {

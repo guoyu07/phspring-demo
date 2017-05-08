@@ -4,6 +4,8 @@
  */
 namespace app;
 
+use phspring\context\Ac;
+use phspring\context\ApplicationContext;
 use phspring\net\server\HttpServer;
 
 /**
@@ -15,11 +17,15 @@ class AppServer extends HttpServer
 
     /**
      * AppServer constructor.
-     * @param $config
+     * @param $configPath
      */
-    public function __construct($config)
+    public function __construct($configPath)
     {
-        parent::__construct();
+        $ac = new ApplicationContext($configPath);
+        Ac::setApplicationContext($ac);
+
+        parent::__construct(Ac::config()->get('server.socket.name'), Ac::config()->get('server.socket.options'));
+        $this->count = Ac::config()->get('server.worker.count');
     }
     
     /**
@@ -27,6 +33,6 @@ class AppServer extends HttpServer
      */
     public function run()
     {
-
+        parent::run();
     }
 }
