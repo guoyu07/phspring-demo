@@ -21,8 +21,7 @@ class AppServer extends HttpServer
      */
     public function __construct($configPath)
     {
-        $ac = new ApplicationContext($configPath);
-        Ac::setApplicationContext($ac);
+        Ac::setApplicationContext(new ApplicationContext($configPath));
 
         parent::__construct(Ac::config()->get('server.socket.name'), Ac::config()->get('server.socket.options'));
         $this->count = Ac::config()->get('server.worker.count');
