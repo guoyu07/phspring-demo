@@ -13,4 +13,4 @@ define('RUNTIME_DIR', realpath(ROOT_PATH . '/../runtime') . '/' . APPLICATION_NA
 require_once ROOT_PATH . '/vendor/autoload.php';
 
 $config = ROOT_PATH . '/app/config/' . APPLICATION_ENV . '/main.php';
-(new \app\AppServer($config))->run();
+(new \app\AppServer($config))->mangerRun();

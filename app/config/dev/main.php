@@ -9,12 +9,6 @@ return array_merge(
                 'options' => [],
             ]
         ],
-        'beans' => [
-            'poi' => [
-                'class' => 'PGPoiService',
-                'mode' => 'develop'
-            ],
-        ],
         'params' => [
             'siteHost' => 'www.demo.com',
         ],

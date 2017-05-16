@@ -7,6 +7,7 @@ namespace app;
 use phspring\context\Ac;
 use phspring\context\ApplicationContext;
 use phspring\net\server\HttpServer;
+use phspring\net\server\Manager;
 
 /**
  * Class AppServer
@@ -24,14 +25,14 @@ class AppServer extends HttpServer
         Ac::setApplicationContext(new ApplicationContext($configPath));
 
         parent::__construct(Ac::config()->get('server.socket.name'), Ac::config()->get('server.socket.options'));
-        $this->count = Ac::config()->get('server.worker.count');
+        $this->setCount(Ac::config()->get('server.worker.count', 1));
     }
     
     /**
-     * run server
+     * run manager server
      */
-    public function run()
+    public function mangerRun()
     {
-        parent::run();
+        Manager::run();
     }
 }
