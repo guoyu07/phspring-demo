@@ -1,7 +1,7 @@
 <?php
 
-return array_merge(
-    require_once(dirname(__FILE__) . '/../main.php'),
+return \phspring\toolbox\helper\ArrayHelper::merge(
+    require_once(__DIR__ . '/../main.php'),
     [
         'beans' => [
             'poi' => [

@@ -4,6 +4,8 @@ return [
     'name' => APPLICATION_NAME,
     'server' => [
         'processTitle' => 'phspring-demo',
+        'pidSaveDir' => RUNTIME_DIR . '/pids/',
+        'logFile' => RUNTIME_DIR . '/phspring.log',
         'worker' => [
             'count' => 2
         ]
