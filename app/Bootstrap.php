@@ -6,14 +6,13 @@ namespace app;
 
 use phspring\context\Ac;
 use phspring\context\ApplicationContext;
-use phspring\net\server\HttpServer;
 use phspring\net\server\Manager;
 
 /**
  * Class AppServer
  * @package app
  */
-class AppServer extends HttpServer
+class Bootstrap
 {
 
     /**
@@ -29,9 +28,9 @@ class AppServer extends HttpServer
     }
     
     /**
-     * run manager server
+     * start
      */
-    public function mangerRun()
+    public function start()
     {
         Manager::run();
     }
