@@ -12,5 +12,11 @@ use phspring\mvc\Controller;
  */
 class IndexHandler extends Controller
 {
+    /**
+     * @param int $uid
+     */
+    public function methodIndex($uid)
+    {
 
+    }
 }

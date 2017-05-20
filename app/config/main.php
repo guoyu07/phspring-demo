@@ -16,6 +16,13 @@ return [
     'rpc' => [
 
     ],
+    'beanPool' => [
+        'gc' => [
+            'enable' => true,
+            'maxExpireTime' => 7200,
+            'maxUsecount' => 30000
+        ]
+    ],
     'beans' => [
         'packer' => [
             'class' => \phspring\net\pack\JsonPack::class,
@@ -23,7 +30,7 @@ return [
         ],
         'router' => [
             'class' => \phspring\mvc\route\Route::class,
-            'scope' => \phspring\core\BeanFactory::SCOPE_SINGLETON
+            'scope' => \phspring\core\BeanFactory::SCOPE_POOL
         ],
         'scheduler' => [
             'class' => \phspring\coroutine\Scheduler::class,
