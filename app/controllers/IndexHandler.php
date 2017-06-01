@@ -2,20 +2,20 @@
 /**
  * This file is part of the phspring package.
  */
-namespace app\controller;
+namespace app\controllers;
 
 use phspring\mvc\Controller;
 
 /**
  * Class IndexHandler
- * @package app\controller
+ * @package app\controllers
  */
 class IndexHandler extends Controller
 {
     /**
      * @param int $uid
      */
-    public function methodIndex($uid)
+    public function actionIndex($uid)
     {
 
     }

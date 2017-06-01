@@ -2,7 +2,7 @@
 /**
  * This file is part of the phspring package.
  */
-namespace app\controller;
+namespace app\controllers;
 
 use app\model\service\IndexService;
 use app\model\service\IocService;
@@ -14,7 +14,7 @@ use phspring\context\Ac;
  */
 class DemoController extends \phspring\mvc\Controller
 {
-    public function methodIndex()
+    public function actionIndex()
     {
         $uid = 1;
 
@@ -25,7 +25,7 @@ class DemoController extends \phspring\mvc\Controller
         $this->outputJson($data);
     }
 
-    public function methodIoc()
+    public function actionIoc()
     {
         /* @var $service IocService */
         $service = Ac::getBean(IocService::class, $this->context);
