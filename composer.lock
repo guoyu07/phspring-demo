@@ -138,12 +138,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/syyongx/PhSpring.git",
-                "reference": "6699313f13e2ec645de1cbe00ab77e20a3efb008"
+                "reference": "8fc14b56f4f5a9e8c0900bd50344646e8624c2a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/syyongx/PhSpring/zipball/6699313f13e2ec645de1cbe00ab77e20a3efb008",
-                "reference": "6699313f13e2ec645de1cbe00ab77e20a3efb008",
+                "url": "https://api.github.com/repos/syyongx/PhSpring/zipball/8fc14b56f4f5a9e8c0900bd50344646e8624c2a8",
+                "reference": "8fc14b56f4f5a9e8c0900bd50344646e8624c2a8",
                 "shasum": ""
             },
             "require": {
@@ -177,7 +177,7 @@
                 "wiki": "https://github.com/syyongx/PhSpring/wiki/",
                 "source": "https://github.com/syyongx/PhSpring"
             },
-            "time": "2017-05-24 03:09:43"
+            "time": "2017-06-01 07:47:09"
         }
     ],
     "packages-dev": [],

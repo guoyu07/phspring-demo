@@ -1,10 +1,10 @@
 {
-    "name": "syyongx/PhSpring-demo",
+    "name": "syyongx/phspring-demo",
     "description": "The demo of phspring framework",
     "keywords": [
-        "PhSpring-demo"
+        "phspring-demo"
     ],
-    "homepage": "https://github.com/syyongx/PhSpring-demo",
+    "homepage": "https://github.com/syyongx/phspring-demo",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -16,24 +16,24 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/syyongx/PhSpring-demo/issues?state=open",
-        "wiki": "https://github.com/syyongx/PhSpring-demo/wiki/",
-        "source": "https://github.com/syyongx/PhSpring-demo"
+        "issues": "https://github.com/syyongx/phspring-demo/issues?state=open",
+        "wiki": "https://github.com/syyongx/phspring-demo/wiki/",
+        "source": "https://github.com/syyongx/phspring-demo"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=7.0",
-        "syyongx/PhSpring": "dev-master"
+        "syyongx/phspring": "dev-master"
     },
     "repositories": {
         "packagist": {
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
         },
-        "PhSpring": {
+        "phspring": {
             "type": "vcs",
-            "url": "https://github.com/syyongx/PhSpring.git"
+            "url": "https://github.com/syyongx/phspring.git"
         }
     },
     "autoload": {
